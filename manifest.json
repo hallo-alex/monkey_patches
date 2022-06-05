@@ -1,0 +1,9 @@
+{
+    "domain": "monkey_patches",
+    "name": "Monkey patches",
+    "version": "0.0.1",
+    "dependencies": ["ssdp"],
+    "loggers": [
+        "custom_components.home_assistant_monkey_patches"
+    ]
+}
