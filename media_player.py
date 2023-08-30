@@ -1,4 +1,4 @@
-"""Monkey patches for async_upnp_client."""
+"""Monkey patches for async_update_patched."""
 
 import logging
 import re
@@ -10,7 +10,7 @@ from async_upnp_client.exceptions import UpnpXmlParseError, UpnpError, UpnpRespo
 _LOGGER = logging.getLogger(__name__)
 
 
-
+# Original here: https://github.com/home-assistant/core/blob/867e9b73bbcad4f681f8996833d65690b4765527/homeassistant/components/dlna_dmr/media_player.py#L417
 async def async_update_patched(self) -> None:
         """Retrieve the latest data."""
         if not self._device:
